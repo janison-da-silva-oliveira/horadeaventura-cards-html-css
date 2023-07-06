@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;1,100;1,200;1,300;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right,rgba(0,0,0,0.5)50%, rgb(0,0,0,0.4)),url(442432.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+body .logo{
+    margin-bottom: 90px;
+    margin-top: 9px;
+    width: 300px;
+    height: 90px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+body .logo img{
+    width: 80%;
+    display: block;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1100px;
+    width: 100%;
+    margin:15px;
+}
+.container .principal{
+    display: flex;
+    width:300px;
+    margin: 10px 10px;
+    min-height: 100px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 30px 0px;
+    background-image: linear-gradient(to right,#2269b9, #7195c5);
+}
+.conteudo-text h4{
+    transition: ease-out 0.5s;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+.container .card1 h4:hover{
+    transition: ease-in 0.2s;
+    color: rgb(0, 0, 0);
+}
+.container .card2{
+    background-image: linear-gradient(to right,rgb(187, 79, 102), rgba(90, 27, 11, 0.781));
+}
+.container .card2 h4:hover{
+    transition: ease-in 0.2s;
+    color: black;
+}
+.container .card3{
+    background-image: linear-gradient(to right,#2c6d67, rgb(3, 1, 0));
+}
+.container .card3 h4:hover{
+    transition: ease-in 0.2s;
+    color: black;
+}
+.container .card4{
+    background-image: linear-gradient(to right,rgb(36, 108, 167), rgb(223, 99, 27));
+}
+.container .card4 h4:hover{
+    transition: ease-in 0.2s;
+    color: black;
+}
+.container .conteudo-icon{
+    width: 30%;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.conteudo-icon img{
+    width: 60%;
+    min-height: 100%;
+    padding-bottom: 40px ;
+}
+.conteudo-icon span i{
+    background-color: red;
+}
+.container .principal .conteudo-text{
+    width: 80%;
+    min-height: 100%;
+}
+.conteudo-text{
+    padding: 0 6px;
+}
+.conteudo-text p{
+    padding-top: 5px;
+    color: white;
+
+}
+.conteudo-text h4{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+}
+
+
+/*MidiaScreen*/
+
+@media screen and (max-width:622px) {
+    .principal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .conteudo-icon img{
+        padding-bottom: 0;
+        min-height: auto;
+        width: auto;
+    }
+    .conteudo-text h4{
+        text-align: center;
+    }
+    .card4 .conteudo-text{
+       margin-bottom: 16px;
+    }
+}
